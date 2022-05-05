@@ -1,0 +1,80 @@
+.kf-hairline-after {
+  position: absolute;
+  box-sizing: border-box;
+  content: ' ';
+  pointer-events: none;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  transform: scale(0.5);
+}
+
+// 下边框
+@mixin kf-hairline-bottom($color, $position: relative) {
+  position: $position;
+  &:after {
+    border: 0 solid $color;
+    border-bottom-width: 1px;
+    @extend .kf-hairline-after;
+  }
+}
+
+// 上边框
+@mixin kf-hairline-top($color, $position: relative) {
+  position: $position;
+  &:after {
+    border: 0 solid $color;
+    border-top-width: 1px;
+    @extend .kf-hairline-after;
+  }
+}
+
+// 左边框
+@mixin kf-hairline-left($color, $position: relative) {
+  position: $position;
+  &:after {
+    border: 0 solid $color;
+    border-left-width: 1px;
+    @extend .kf-hairline-after;
+  }
+}
+
+// 右边框
+@mixin kf-hairline-right($color, $position: relative) {
+  position: $position;
+  &:after {
+    border: 0 solid $color;
+    border-right-width: 1px;
+    @extend .kf-hairline-after;
+  }
+}
+
+// 上下边框
+@mixin kf-hairline-top-bottom($color, $position: relative) {
+  position: $position;
+  &:after {
+    border: 0 solid $color;
+    border-width: 1px 0;
+    @extend .kf-hairline-after;
+  }
+}
+
+// 全边框
+@mixin kf-hairline-surround($color, $position: relative, $radius: 0) {
+  position: $position;
+  &:after {
+    border: 0 solid $color;
+    border-radius: $radius;
+    border-width: 1px;
+    @extend .kf-hairline-after;
+  }
+}
+
+// 隐藏滚动条
+@mixin hide-scroll-bar {
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    width: 0 !important;
+  }
+}

@@ -1,0 +1,32 @@
+// 自定义vant-ui的主题
+:root {
+  --van-button-primary-background-color: var(--van-primary-color);
+
+  --van-nav-bar-height: 44px;
+  --van-nav-bar-arrow-size: 18px;
+  --van-nav-bar-icon-color: #0d171a;
+  --van-nav-bar-text-color: #0d171a;
+  --van-nav-bar-title-font-size: 17px;
+  --van-nav-bar-title-text-color: #0d171a;
+  --van-nav-bar-z-index: 10;
+
+  --van-empty-padding: 0;
+  --van-empty-description-padding: 0;
+
+  --van-search-padding: 1px 0;
+  --van-search-content-background-color: #fff;
+
+  --van-notice-bar-height: 38px;
+
+  --van-dialog-border-radius: 8px;
+  --van-dialog-header-padding-top: 32px;
+  --van-dialog-header-font-weight: 17px;
+  --van-dialog-button-height: 55px;
+  --van-dialog-confirm-button-text-color: #00b9ef;
+
+  --van-toast-border-radius: 4px;
+
+  --van-index-bar-index-font-size: 12px;
+
+  --van-index-bar-index-line-height: 18px;
+}

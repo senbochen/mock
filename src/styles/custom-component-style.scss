@@ -1,0 +1,28 @@
+/*
+  用于内部组件的全局样式
+*/
+// loading指令的样式
+.kf-loading-mask {
+  position: absolute;
+  z-index: 2000;
+  background-color: rgba(255, 255, 255, 1);
+  margin: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.kf-loading-container {
+  padding: 20px 20px 12px 20px;
+  border-radius: 6px;
+}
+.kf-loading-parent--hidden {
+  overflow: hidden !important;
+}
+.kf-loading-parent--relative {
+  position: relative !important;
+}

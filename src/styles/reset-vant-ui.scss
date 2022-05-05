@@ -1,0 +1,29 @@
+/*
+  重置公共样式之前，请优先设置theme
+*/
+#app {
+  .van-nav-bar {
+    &::after {
+      display: none;
+    }
+  }
+
+  .van-nav-bar__title {
+    line-height: 28px;
+  }
+
+  .van-empty__description {
+    white-space: nowrap;
+  }
+
+  .van-search__content .van-field__control {
+    color: #0d171a;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .van-dialog__header {
+    color: #0d171a;
+    font-weight: bold;
+  }
+}

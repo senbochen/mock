@@ -1,0 +1,77 @@
+{
+  上传"backgroundImage": "xxx",
+  文本框"textNodeList": [
+    {
+      "id": "price",
+      "layout": {
+        "fontSize": 16,
+        "x": 100,
+        "y": 100,
+        "width": 120,
+        "height": 60,
+        "color": "#333"
+      },
+      "children": {
+        "text": "价格",
+        "layout": {
+          "fontSize": 16,
+          "x": 100,
+          "y": 100,
+          "width": 120,
+          "height": 60,
+          "color": "#333"
+        }
+      }
+    },
+    {
+      "id": "layout",
+      "layout": {
+        "fontSize": 16,
+        "x": 100,
+        "y": 100,
+        "width": 120,
+        "height": 60,
+        "color": "#333"
+      },
+      "children": {
+        "text": "户型",
+        "layout": {
+          "fontSize": 16,
+          "x": 100,
+          "y": 100,
+          "width": 120,
+          "height": 60,
+          "color": "#333"
+        }
+      }
+    },
+    {
+      "id": "area",
+      "layout": {
+        "fontSize": 16,
+        "x": 100,
+        "y": 100,
+        "width": 120,
+        "height": 60,
+        "color": "#333"
+      },
+      "children": {
+        "text": "面积",
+        "layout": {
+          "fontSize": 16,
+          "x": 100,
+          "y": 100,
+          "width": 120,
+          "height": 60,
+          "color": "#333"
+        }
+      }
+    }
+  ],
+  单选框"mvEffect": {
+    "name": "",
+    "url": ""
+  },
+  单选框"effect": 1,
+  单选框"transtionEffect": 1
+}
