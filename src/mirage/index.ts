@@ -1,5 +1,5 @@
 import { createServer, Model, Factory } from 'miragejs'
-export default function makeServer() {
+export default function makeServer(): any {
   const server = createServer({
     models: {
       user: Model,

@@ -9,6 +9,7 @@ const operationClass = (dom: ElementType) => {
     return
   }
 }
+
 const shake = (params: Record<string, any>, ...rest: any[]) => {
   const target = rest[0]
   const className = params.value?.className || ''

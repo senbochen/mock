@@ -1,5 +1,10 @@
 <template>
   <div class="container-wrap">
+    <p v-swiper class="ellipsis">
+      <span class="animation" style="width: 860.34px"
+        >和打扫我会丢OA时候地点哈搜盘都好的哈是的哈死了打哦IP的就爱搜度和艾速的哈斯U盾会死啊哦和打扫我会丢OA时候地点哈搜盘都好的哈是的哈死了打哦IP的就爱搜度和艾速的哈斯U盾会死啊哦</span
+      >
+    </p>
     <van-list
       v-model:loading="loading"
       :finished="finished"
@@ -17,10 +22,17 @@
 <script setup lang="ts">
 import axios from 'axios'
 import { onMounted, ref } from 'vue'
-const list = ref(0)
+const list = ref<
+  Array<{
+    id?: string
+    title?: string
+    name?: string
+  }>
+>([])
 const loading = ref(false)
 const pageSize = ref(10)
 const currentPage = ref(1)
+const finished = ref(false)
 const request = () => {
   loading.value = true
   try {
@@ -66,5 +78,12 @@ const onLoad = () => {
     font-size: 18px;
     color: #03a9f4;
   }
+}
+
+.ellipsis {
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 </style>
