@@ -112,14 +112,14 @@ body {
 }
 
 .animation {
-  animation: marquee 2s linear infinite;
+  animation: marquee 8s linear infinite;
 }
 @keyframes marquee {
   0% {
-    transform: translateX(0%);
+    transform: translateX(5%);
   }
 
   100% {
-    transform: translateX(-100%); //这里不是-100%！
+    transform: translateX(-105%); //这里不是-100%！
   }
 }

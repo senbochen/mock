@@ -1,5 +1,13 @@
 import { App } from 'vue'
-import { ConfigProvider, Button, Empty, NavBar, Loading, List } from 'vant'
+import {
+  ConfigProvider,
+  Button,
+  Empty,
+  NavBar,
+  Loading,
+  List,
+  Popover,
+} from 'vant'
 
 export default {
   install: (app: App): void => {
@@ -10,5 +18,6 @@ export default {
       .use(NavBar)
       .use(Loading)
       .use(List)
+      .use(Popover)
   },
 }

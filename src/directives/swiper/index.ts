@@ -15,17 +15,12 @@ const swiperEnter = (params: Record<string, any>, ...rest: any[]) => {
     text = dom.innerText
   }
   dom.style.textOverflow = 'clip'
-
-  const span = document.createElement('span')
-  span.innerText = text.repeat(2)
+  const span = document.createElement('p')
+  span.innerText = text.repeat(3)
   dom.innerText = ''
-
   !dom.childNodes.length && dom.appendChild(span)
-
   span.classList.add('animation')
   span.style.width = getTextWidthFunction(dom.innerText, 14) + 'px'
-  console.log(!dom.childNodes.length, dom.childNodes, span)
-  console.log(dom)
 }
 
 const swiperLeave = (params: Record<string, any>, ...rest: any[]) => {
