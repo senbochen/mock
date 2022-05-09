@@ -5,6 +5,7 @@ const getTextWidthFunction = (text: string, font: number) => {
   const context = canvas.getContext('2d') as any
   context.font = font
   const metrics = context.measureText(text)
+  console.log('metrics>>', metrics.width)
   return metrics.width
 }
 const swiperEnter = (params: Record<string, any>, ...rest: any[]) => {

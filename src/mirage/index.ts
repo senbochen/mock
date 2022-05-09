@@ -8,7 +8,7 @@ export default function makeServer(): any {
     factories: {
       user: Factory.extend({
         title: (res) => {
-          return `Build complete frontend features,even if your API doesn't exist.${res}`
+          return `Build ist.${res}`
         },
         name: 'mirage永远的Mock',
       }),

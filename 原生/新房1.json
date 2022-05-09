@@ -1,0 +1,91 @@
+{
+  "backgroundImage": "https://test-file.kfangcdn.com/test/42b1bc13876e4f34aebc48ef58d3679a.png",
+  "dynamicTextList": [
+    {
+      "id": "title",
+      "layout": {
+        "fontSize": 10,
+        "fontWeight": "bold",
+        "x": 49,
+        "y": 238,
+        "width": 80,
+        "height": 14,
+        "color": "#FFFFFF",
+        "center": true
+      }
+    },
+    {
+      "id": "price",
+      "layout": {
+        "fontSize": 8,
+        "fontWeight": "medium",
+        "x": 14,
+        "y": 284,
+        "width": 23,
+        "height": 11,
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "layout",
+      "layout": {
+        "fontSize": 8,
+        "fontWeight": "medium",
+        "x": 70,
+        "y": 284,
+        "width": 37,
+        "height": 11,
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "region",
+      "layout": {
+        "fontSize": 8,
+        "fontWeight": "medium",
+        "x": 132,
+        "y": 284,
+        "width": 32,
+        "height": 11,
+        "color": "#FFFFFF"
+      }
+    }
+  ],
+  "staticTextList": [
+    {
+      "text": "价格",
+      "layout": {
+        "fontSize": 7,
+        "x": 14,
+        "y": 271,
+        "width": 14,
+        "height": 9,
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "text": "户型",
+      "layout": {
+        "fontSize": 7,
+        "x": 70,
+        "y": 271,
+        "width": 14,
+        "height": 9,
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "text": "区域",
+      "layout": {
+        "fontSize": 7,
+        "x": 132,
+        "y": 271,
+        "width": 14,
+        "height": 9,
+        "color": "#FFFFFF"
+      }
+    }
+  ],
+  "mvEffect": null,
+  "transtionEffect": 7
+}
