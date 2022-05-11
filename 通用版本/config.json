@@ -1,16 +1,16 @@
 {
-  "backgroundImage": "https://test-file.kfangcdn.com/test/2ae167c0bddc4c9b96e777ab1cc1d082.png",
+  "backgroundImage": "https://test-file.kfangcdn.com/test/9d65dde42b4548418af2680ebfae3510.png",
   "dynamicTextList": [
     {
       "id": "title",
       "layout": {
-        "fontSize": 10,
-        "fontWeight": "bold",
-        "x": 49,
-        "y": 238,
-        "width": 80,
-        "height": 14,
-        "color": "#FFFFFF",
+        "fontSize": 8,
+        "fontWeight": "medium",
+        "x": 71,
+        "y": 298,
+        "width": 37,
+        "height": 11,
+        "color": "#222222",
         "center": true
       }
     }
