@@ -1,41 +1,45 @@
 type ElementType = Element | HTMLElement
-let text = ''
-const getTextWidthFunction = (text: string, font: number) => {
-  const canvas = document.createElement('canvas')
-  const context = canvas.getContext('2d') as any
-  context.font = font
-  const metrics = context.measureText(text)
-  console.log('metrics>>', metrics.width)
-  return metrics.width
+
+const getTextWidthFunction = (text: string, font?: number) => {
+  let width = 0
+  const html = document.createElement('span')
+  html.innerText = text
+  html.style.fontSize = font + 'px'
+  html.className = 'getTextWidth'
+  document.querySelector('body')?.appendChild(html)
+  width = html?.offsetWidth
+  document.querySelector('.getTextWidth')?.remove()
+  return width
 }
 const swiperEnter = (params: Record<string, any>, ...rest: any[]) => {
-  const target = rest[0]
-
+  const target = rest[1]
   const dom = target.target as any
-  if (!text) {
-    text = dom.innerText
+  const text = rest[0]
+  console.log(getTextWidthFunction(text, 40), dom?.offsetWidth)
+  if (getTextWidthFunction(text) > dom?.offsetWidth) {
+    dom.style.textOverflow = 'clip'
+    const span = document.createElement('p')
+    span.innerText = text.repeat(3)
+    dom.innerText = ''
+    !dom.childNodes.length && dom.appendChild(span)
+    span.classList.add('animation')
+    span.style.width = getTextWidthFunction(dom.innerText) + 'px'
   }
-  dom.style.textOverflow = 'clip'
-  const span = document.createElement('p')
-  span.innerText = text.repeat(3)
-  dom.innerText = ''
-  !dom.childNodes.length && dom.appendChild(span)
-  span.classList.add('animation')
-  span.style.width = getTextWidthFunction(dom.innerText, 14) + 'px'
 }
 
 const swiperLeave = (params: Record<string, any>, ...rest: any[]) => {
-  const target = rest[0]
+  const target = rest[1]
   const dom = target.target as any
   dom.classList.remove('animation')
-  dom.innerText = text
+  dom.innerText = rest[0]
   dom.style.textOverflow = 'ellipsis'
 }
 
 const vSwiper = {
-  mounted(el: ElementType, params: Record<string, any>): any {
-    el.addEventListener('mouseenter', swiperEnter.bind(null, params))
-    el.addEventListener('mouseleave', swiperLeave.bind(null, params))
+  mounted(el: any, params: Record<string, any>): any {
+    const text = el?.innerText
+    el.addEventListener('mouseenter', swiperEnter.bind(null, params, text))
+    el.addEventListener('mouseleave', swiperLeave.bind(null, params, text))
   },
   unmounted(el: ElementType): void {
     el.removeEventListener('mouseenter', swiperLeave)

@@ -1,6 +1,6 @@
 <template>
   <div class="container-wrap">
-    <p v-swiper class="ellipsis">
+    <p v-swiper="{ font: 14 }" class="ellipsis">
       mirage永远的Mock,mirage永远的Mock,mirage永远的Mock,mirage永远的Mock
     </p>
     <van-list
@@ -11,8 +11,8 @@
       :offset="100"
     >
       <div v-for="item in list" :key="item.id" class="child">
-        <p v-swiper class="ellipsis">{{ item.title }}</p>
-        <h5 v-swiper class="ellipsis">{{ item.name }}</h5>
+        <p v-swiper="{ font: 14 }" class="ellipsis">{{ item.title }}</p>
+        <p v-swiper="{ font: 14 }" class="ellipsis">{{ item.name }}</p>
       </div>
     </van-list>
   </div>
@@ -81,10 +81,11 @@ const onLoad = () => {
 }
 
 .ellipsis {
-  max-width: 100px;
+  width: 100px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 14px;
 }
 .shake {
   animation: swing_image 0.8s linear 0s 1 normal;
