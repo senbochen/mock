@@ -1,20 +1,6 @@
 {
   "backgroundImage": "https://test-file.kfangcdn.com/test/9d65dde42b4548418af2680ebfae3510.png",
-  "dynamicTextList": [
-    {
-      "id": "title",
-      "layout": {
-        "fontSize": 8,
-        "fontWeight": "medium",
-        "x": 71,
-        "y": 298,
-        "width": 37,
-        "height": 11,
-        "color": "#222222",
-        "center": true
-      }
-    }
-  ],
+  "dynamicTextList": [{"id":"title","layout":{"fontSize":8,"fontWeight":"medium","x":71,"y":298,"width":144,"height":11,"color":"#222222","center":true}}],
   "staticTextList": [],
   "mvEffect": null,
   "transtionEffect": 9
